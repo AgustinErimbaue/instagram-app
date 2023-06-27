@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Estilos generales */
+
+body {
+  background-color: #fafafa;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del componente Item */
+
+.publicacion {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.FotoPerfil {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Nombre {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post {
+  padding: 10px;
+}
+
+.FotoPost {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.Post {
+  font-size: 14px;
+  color: #262626;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.Corazon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(0%) invert(52%) sepia(89%) saturate(7351%) hue-rotate(353deg) brightness(95%) contrast(93%);
+  margin-right: 8px;
+}
+
+.Corazon.active {
+  filter: none;
+}
+
+.ComentarioIcono,
+.CompartirIcono {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.nuevoComentario {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  font-size: 14px;
+  outline: none;
+  color: #262626;
+}
+
+.comentarios {
+  padding: 10px;
+}
+
+.comentarios p {
+  font-size: 12px;
+  color: #8e8e8e;
+  margin-bottom: 5px;
+}

@@ -6,13 +6,23 @@ import { useState, useEffect } from 'react'
 const ItemListContainer = () => {
 
     const [perfiles, setPerfiles] = useState([])
+    const [isLoggedIn, setisLoggedIn] = useState(false)
 
     useEffect(() => {
+
+        const storedUsername = localStorage.getItem('username');
+        const storedPassword = localStorage.getItem('password')
+
+        if (storedUsername === 'agustin' && storedPassword === '123456') {
+            setisLoggedIn(true)
+        }
 
         pedirDatos()
             .then((res) => {
                 setPerfiles(res)
-            })
+            });
+
+        
 
         return () => {
 
@@ -21,9 +31,11 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            <Itemlist perfiles={perfiles} />
+            {isLoggedIn ? (
+                <Itemlist perfiles={perfiles} />) :
+                (<h2> Inicia Sesion</h2>)}
         </div>
-        
+
     )
 }
 

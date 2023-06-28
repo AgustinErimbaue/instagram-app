@@ -16,7 +16,14 @@ const Item = ({ perfiles }) => {
 
   const handleCommentSubmit = () => {
     if (nuevoComentario.trim() !== '') {
-      const updatedComentarios = [...comentarios, nuevoComentario];
+      const updatedComentarios = [
+        ...comentarios,
+        {
+          comentario: nuevoComentario,
+          nombre: 'Agustin',
+          fotoPerfil: '/assets/YoPerfil.jpg'
+        },
+      ];
       setComentarios(updatedComentarios);
       setNuevoComentario('');
     }
@@ -55,7 +62,11 @@ const Item = ({ perfiles }) => {
       </div>
       <div className="comentarios">
         {comentarios.map((comentario, index) => (
-          <p key={index}>{comentario}</p>
+          <div key={index} className="Comentario">
+            <img className='FotoPerfilComentario' src={comentario.fotoPerfil} alt="Foto de perfil" />
+            <p className='NombreComentario'>{comentario.nombre}</p>
+            <p className='TextoComentario'>{comentario.comentario}</p>
+          </div>
         ))}
       </div>
     </div>

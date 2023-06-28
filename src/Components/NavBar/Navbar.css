@@ -72,4 +72,24 @@
     font-size: 1.4rem;
     margin-right: 0;
   }
+
+  .Ul_Nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Ul_Nav .NavLink {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .Ul_Nav .NavLink a {
+    font-size: 12px;
+  }
+
+  .Ul_Nav .NavLink a img {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+  }
 }

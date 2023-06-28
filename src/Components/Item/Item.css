@@ -38,6 +38,7 @@ body {
 .Nombre {
   font-size: 14px;
   font-weight: 600;
+  color: #262626;
 }
 
 .post {
@@ -93,8 +94,172 @@ body {
   padding: 10px;
 }
 
-.comentarios p {
+.Comentario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.FotoPerfilComentario {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.NombreComentario {
   font-size: 12px;
-  color: #8e8e8e;
-  margin-bottom: 5px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.TextoComentario {
+  font-size: 12px;
+  color: #262626;
+}
+
+/* Estilos específicos de Instagram */
+
+.publicacion {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.perfil {
+  padding: 10px;
+}
+
+.FotoPerfil {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Nombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.post {
+  padding: 10px;
+}
+
+.FotoPost {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.Post {
+  font-size: 14px;
+  color: #262626;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.Corazon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(0%) invert(52%) sepia(89%) saturate(7351%) hue-rotate(353deg) brightness(95%) contrast(93%);
+  margin-right: 8px;
+}
+
+.Corazon.active {
+  filter: none;
+}
+
+.ComentarioIcono,
+.CompartirIcono {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.nuevoComentario {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  font-size: 14px;
+  outline: none;
+  color: #262626;
+}
+
+.comentarios {
+  padding: 10px;
+}
+
+.Comentario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.FotoPerfilComentario {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.NombreComentario {
+  font-size: 12px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.TextoComentario {
+  font-size: 12px;
+  color: #262626;
+  margin-left: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Ajustar el tamaño del contenedor */
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Ajustar el tamaño de las fotos de perfil */
+  .FotoPerfil {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Ajustar el tamaño de las fotos de los posts */
+  .FotoPost {
+    max-height: 300px;
+  }
+
+  /* Ajustar tamaño de fuente y margen del comentario */
+  .nuevoComentario {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Ocultar los íconos de comentario y compartir */
+  .ComentarioIcono,
+  .CompartirIcono {
+    display: none;
+  }
+
+  /* Ajustar tamaño de fuente del nombre del comentario */
+  .NombreComentario {
+    font-size: 10px;
+  }
+
+  /* Ajustar tamaño de fuente del texto del comentario */
+  .TextoComentario {
+    font-size: 10px;
+  }
 }

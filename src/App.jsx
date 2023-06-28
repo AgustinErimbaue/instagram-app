@@ -3,6 +3,7 @@ import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import Navbar from './Components/NavBar/Navbar';
 import LoginForm from './Components/LoginForm/LoginForm';
 import {useState} from 'react'
+import Perfil from './Components/PerfilContainer/PerfilContainer';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -17,6 +18,7 @@ function App() {
         <>
           <Navbar />
           <ItemListContainer />
+          <Perfil />
         </>
       ) : (
         <LoginForm onLogin={handleLogin} />

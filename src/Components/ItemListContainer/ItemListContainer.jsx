@@ -33,7 +33,7 @@ const ItemListContainer = () => {
         <div>
             {isLoggedIn ? (
                 <Itemlist perfiles={perfiles} />) :
-                (<h2> Inicia Sesion</h2>)}
+                (<h2> Inicia Sesion</h2>)} 
         </div>
 
     )

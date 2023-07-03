@@ -1,56 +1,48 @@
-import React from 'react'
-import './Navbar.css'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-    return (
-        <nav className='NavbarContainer'>
-            <img className='Imagen_Nav' src="/assets/instagram.png" alt="" />
-            <h3>Instagram</h3>
-            <div className='Navbar'>
-                <ul className='Ul_Nav'>
-                    <li className='NavLink'>
-                        <a href="#">
-                            <img
-                                src="/assets/inicio.jpg"
-                                alt="imagen de home"
-                            />
-                            Inicio
-                        </a>
-                    </li>
-                    <li className='NavLink'>
+  return (
+    <nav className='NavbarContainer'>
+      <img className='Imagen_Nav' src="/assets/instagram.png" alt="" />
+      <h3>Instagram</h3>
+      <div className='Navbar'>
+        <ul className='Ul_Nav'>
+          <li className='NavLink'>
+            <NavLink to="/" activeClassName="activeNavLink" exact>
+              <img src="/assets/inicio.jpg" alt="imagen de home" />
+              Inicio
+            </NavLink>
+          </li>
+          <li className='NavLink'>
+            <NavLink to="/Reels" activeClassName="activeNavLink">
+              <img src="/assets/globo.png" alt="Imagen de mundo" />
+              Reels
+            </NavLink>
+          </li>
+          <li className='NavLink'>
+            <NavLink to="/notificaciones" activeClassName="activeNavLink">
+              <img src="/assets/boton-de-notificaciones.png" alt="imagen notificaciones" />
+              Notificaciones
+            </NavLink>
+          </li>
+          <li className='NavLink'>
+            <NavLink to="/busqueda" activeClassName="activeNavLink">
+              <img src="/assets/lupa.png" alt="imagen de busqueda" />
+              Busqueda
+            </NavLink>
+          </li>
+          <li className='NavLink'>
+            <NavLink to="/perfil" activeClassName="activeNavLink">
+              <img src="assets/usuario.png" alt="usuario" />
+              Perfil
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
-                        <a href="#">
-                            <img src="/assets/globo.png"
-                                alt="Imagen de mundo" />
-                            Explorar
-                        </a>
-                    </li>
-                    <li className='NavLink'>
-
-                        <a href="#">
-                            <img src="/assets/boton-de-notificaciones.png" alt="imagen notificaciones" />
-                            Notificaciones
-                        </a>
-                    </li>
-                    <li className='NavLink'>
-
-                        <a href="#">
-                            <img src="/assets/lupa.png" alt="imagen de busqueda" />
-                            Busqueda
-                        </a>
-                    </li>
-                    <li className='NavLink'>
-
-                        <a href="#">
-                            <img src="assets/usuario.png" alt="usuario" />
-                            Perfil
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    )
-}
-
-export default Navbar
+export default Navbar;

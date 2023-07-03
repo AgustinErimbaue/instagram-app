@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import perfilData from '../data/Perfil'
+import Perfil from '../Perfil/Perfil'
 
 const PerfilContainer = () => {
 
@@ -13,7 +14,9 @@ const PerfilContainer = () => {
 
 
   return (
-    <div>Perfil</div>
+    <div>
+      <Perfil perfilUsuario={perfilUsuario} />
+    </div>
   )
 }
 

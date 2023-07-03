@@ -1,0 +1,18 @@
+.perfil-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .perfil-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .perfil-container p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  

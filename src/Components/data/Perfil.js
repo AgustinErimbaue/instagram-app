@@ -9,11 +9,11 @@ const perfilData = {
     "email": "ejemplo@email.com",
     "phone": "+1234567890",
     "location": "España",
-    "profile_picture": "https://www.ejemplo.com/imagen_perfil.jpg",
+    "profile_picture": "assets/YoPerfil.jpg",
     "recent_posts": [
       {
         "id": 1,
-        "image": "https://www.ejemplo.com/post1.jpg",
+        "image": "/assets/Post1.jpg",
         "caption": "Descripción del primer post",
         "likes": 50,
         "comments": 10,
@@ -21,12 +21,18 @@ const perfilData = {
       },
       {
         "id": 2,
-        "image": "https://www.ejemplo.com/post2.jpg",
+        "image": "/assets/post 2.jpg",
         "caption": "Descripción del segundo post",
         "likes": 100,
         "comments": 20,
         "timestamp": "2023-06-26T09:30:00Z"
-      }
+      },
+      {"id": 3,
+      "image": "/assets/post3.jpg",
+      "caption": "Descripción del segundo post",
+      "likes": 145,
+      "comments": 200,
+      "timestamp": "2023-06-26T09:30:00Z"}
     ]
   }
   

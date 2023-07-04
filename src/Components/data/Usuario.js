@@ -17,7 +17,7 @@ const Usuario = [
       "id": 3,
       "photoPerfil": "/assets/JuliPerfil.jpg",
       "name": "Julieta",
-      "photoPost":"/assets/Julita.jpg",
+      "photoPost":"/assets/Post1.jpg",
       "post": "Salio peluqueria."
     },
     {

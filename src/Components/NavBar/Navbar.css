@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
 .NavbarContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline; /* Ajuste de alineación */
   background-color: #ffffff;
   padding: 16px 0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.0975);
@@ -62,34 +60,28 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .NavbarContainer {
-    justify-content: flex-start;
-    padding: 12px 0;
-  }
+.Ul_Nav .BuscarButton {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: #3897f0;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .NavbarContainer h3 {
-    font-size: 1.4rem;
-    margin-right: 0;
-  }
+.Ul_Nav .BuscarButton img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
-  .Ul_Nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .Ul_Nav .NavLink {
-    margin-right: 0;
-    margin-bottom: 8px;
-  }
-
-  .Ul_Nav .NavLink a {
-    font-size: 12px;
-  }
-
-  .Ul_Nav .NavLink a img {
-    width: 18px;
-    height: 18px;
-    margin-right: 4px;
-  }
+.Ul_Nav .BuscarButton:hover {
+  background-color: #1877c7;
 }

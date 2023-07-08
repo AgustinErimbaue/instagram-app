@@ -1,0 +1,62 @@
+.BusquedaContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .BusquedaInput {
+    flex-grow: 1;
+    height: 24px;
+    padding: 4px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #262626;
+  }
+  
+  .ClearButton {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #dbdbdb;
+    color: #262626;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+  }
+  
+  .ClearButton:hover {
+    background-color: #c7c7c7;
+  }
+  
+  .ResultadosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }
+  
+  .ResultadoUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .ResultadoUsuario img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+  }
+  
+  .ResultadoUsuario p {
+    font-size: 14px;
+    color: #262626;
+  }
+  
